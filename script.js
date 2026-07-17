@@ -162,7 +162,7 @@ function parseGvizDate(raw) {
 async function loadAvailability() {
   if (!AVAILABILITY_CONFIG.SHEET_ID) {
     availabilityData = buildFallbackData();
-    calSyncStatus.textContent = "Showing sample availability — connect a Google Sheet in script.js to make this live.";
+    calSyncStatus.textContent = "For the most accurate availability, message us directly on WhatsApp.";
     renderCalendar();
     return;
   }
@@ -188,7 +188,7 @@ async function loadAvailability() {
     calSyncStatus.textContent = "Live availability, synced from the booking sheet.";
   } catch (err) {
     availabilityData = buildFallbackData();
-    calSyncStatus.textContent = "Couldn't reach the live sheet — showing sample availability.";
+    calSyncStatus.textContent = "For the most accurate availability, message us directly on WhatsApp.";
   }
   renderCalendar();
 }
