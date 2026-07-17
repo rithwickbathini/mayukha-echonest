@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayukha EchoNest — Countryside Resort, Hanamkonda</title>
+<meta name="description" content="Mayukha EchoNest is a countryside resort near Hanamkonda, Telangana — traditional courtyard architecture, open lawns, and golden evenings. Check availability and book on WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Resort",
+  "name": "Mayukha EchoNest",
+  "image": "assets/images/hero-brand.jpeg",
+  "telephone": "+91-9160700775",
+  "email": "mayukharesorts@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rajawaram Road, Chinnapendyala",
+    "addressLocality": "Hanamkonda",
+    "addressRegion": "Telangana",
+    "postalCode": "506144",
+    "addressCountry": "IN"
+  },
+  "sameAs": ["https://www.instagram.com/mayukha_echonest"]
+}
+</script>
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <a href="#top" class="nav-brand">Mayukha <em>EchoNest</em></a>
+  <nav class="nav-links">
+    <a href="#about">The Resort</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#availability">Availability</a>
+    <a href="#location">Location</a>
+    <a href="#contact" class="nav-cta">Enquire</a>
+  </nav>
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">The Resort</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#experiences">Experiences</a>
+  <a href="#availability">Availability</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Enquire</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/images/hero-brand.jpeg" alt="Mayukha EchoNest resort illuminated at night" id="heroImg">
+    <div class="hero-scrim"></div>
+  </div>
+  <div class="hero-content">
+    <p class="kicker reveal">Rajawaram Road · Hanamkonda · Telangana</p>
+    <div class="hero-actions reveal">
+      <a href="#availability" class="btn btn-primary magnetic">Check Availability</a>
+      <a id="heroWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-ghost magnetic">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Countryside Escape</span><span>·</span><span>Golden Evenings</span><span>·</span>
+    <span>Family Gatherings</span><span>·</span><span>Open Lawns</span><span>·</span>
+    <span>Telangana Heritage</span><span>·</span><span>Countryside Escape</span><span>·</span>
+    <span>Golden Evenings</span><span>·</span><span>Family Gatherings</span><span>·</span>
+    <span>Open Lawns</span><span>·</span><span>Telangana Heritage</span><span>·</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <p class="section-kicker">The Resort</p>
+      <h2>A courtyard retreat, <br>built for slow evenings.</h2>
+      <p class="about-text hero-lead">An echo of nature. A nest of calm.</p>
+      <p class="about-text">
+        Tucked off Rajawaram Road in the quiet countryside of Chinnapendyala, Hanamkonda,
+        Mayukha EchoNest is built around traditional Telangana courtyard architecture —
+        terracotta-tiled roofs, wooden pillars, and open verandas — set against acres of
+        open lawn and palm groves.
+      </p>
+      <p class="about-text">
+        By day, the grounds are sunlit and still. By evening, string lights trace the
+        roofline and the courtyard glows gold — a setting equally suited to a quiet family
+        outing, a celebration under the pergola, or an evening that simply asks for nothing at all.
+      </p>
+      <div class="about-tags">
+        <span>Traditional Courtyard Architecture</span>
+        <span>Open Lawns &amp; Palm Gardens</span>
+        <span>Day &amp; Evening Events</span>
+      </div>
+    </div>
+    <div class="about-image reveal">
+      <img src="assets/images/day-facade.jpeg" alt="Mayukha EchoNest daytime facade">
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDESHOW ============ -->
+<section class="slideshow" id="gallery">
+  <p class="section-kicker center reveal">Gallery</p>
+  <h2 class="center reveal">How it looks, hour by hour</h2>
+
+  <div class="slider" id="slider">
+    <div class="slider-track" id="sliderTrack">
+      <div class="slide"><img src="assets/images/day-facade.jpeg" alt="Mayukha EchoNest by daylight"><span class="slide-caption">By Day</span></div>
+      <div class="slide"><img src="assets/images/twilight-lawn.jpeg" alt="Mayukha EchoNest at twilight, lawn and guests"><span class="slide-caption">Golden Hour</span></div>
+      <div class="slide"><img src="assets/images/hero-brand.jpeg" alt="Mayukha EchoNest illuminated courtyard at night" style="object-position:top;"><span class="slide-caption">After Dark</span></div>
+    </div>
+    <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">&#8594;</button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+
+  <div class="bento reveal">
+    <figure class="bento-tile tall">
+      <img src="assets/images/mood-collage.jpeg" alt="Peaceful, serene, refreshing — Mayukha EchoNest mood collage">
+    </figure>
+    <figure class="bento-tile tall">
+      <img src="assets/images/spaces-collage.jpeg" alt="Lounge seating, event pavilion and dining hall at Mayukha EchoNest">
+      <figcaption>Spaces for every occasion</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCES ============ -->
+<section class="experiences" id="experiences">
+  <p class="section-kicker center reveal">Spaces &amp; Experiences</p>
+  <h2 class="center reveal">What awaits you here</h2>
+  <div class="exp-grid">
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><path d="M6 40h36M10 40V22l14-12 14 12v18M18 40V26h12v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <h3>Sprawling Open Lawns</h3>
+      <p>Acres of manicured green, ready for gatherings, games, and long conversations under the sky.</p>
+    </div>
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 40c2-10 8-16 16-16s14 6 16 16" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <h3>Traditional Dining Hall</h3>
+      <p>Multi-cuisine dining beneath a warm chandelier glow, framed by red-brick courtyard walls.</p>
+    </div>
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><path d="M6 20 24 8l18 12M10 20v20h28V20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 20h36" stroke="currentColor" stroke-width="2"/></svg>
+      <h3>Illuminated Pergola</h3>
+      <p>A fairy-lit, pillared pavilion made for celebrations, sundowners, and golden-hour photographs.</p>
+    </div>
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><rect x="8" y="18" width="32" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 18v-4a10 10 0 0 1 20 0v4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <h3>Veranda Lounge Seating</h3>
+      <p>Wicker chairs beneath lantern light — the spot for a quiet coffee or a late-night chat.</p>
+    </div>
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><path d="M24 6c6 8 6 14 0 22-6-8-6-14 0-22ZM10 30c4 4 8 4 14 0M38 30c-4 4-8 4-14 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 28v14" stroke="currentColor" stroke-width="2"/></svg>
+      <h3>Landscaped Palm Gardens</h3>
+      <p>Palms and flowering shrubs line every walkway, framing the courtyard from every angle.</p>
+    </div>
+    <div class="exp-card reveal">
+      <svg viewBox="0 0 48 48"><rect x="6" y="16" width="36" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="34" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="34" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <h3>Ample On-site Parking</h3>
+      <p>Generous parking space right on the grounds, for both quiet visits and larger events.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVAILABILITY ============ -->
+<section class="availability" id="availability">
+  <p class="section-kicker center reveal">Plan Your Visit</p>
+  <h2 class="center reveal">Check availability &amp; book your date</h2>
+  <p class="avail-sub center reveal">
+    Pick a date below to see if it's open. Tap it to send us your booking enquiry directly on WhatsApp.
+  </p>
+
+  <div class="cal-wrap reveal">
+    <div class="cal-card">
+      <div class="cal-head">
+        <button id="calPrev" aria-label="Previous month">&#8592;</button>
+        <h3 id="calMonthLabel">Month Year</h3>
+        <button id="calNext" aria-label="Next month">&#8594;</button>
+      </div>
+      <div class="cal-weekdays">
+        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-legend">
+        <span><i class="dot dot-available"></i>Available</span>
+        <span><i class="dot dot-limited"></i>Filling Up</span>
+        <span><i class="dot dot-booked"></i>Booked</span>
+      </div>
+      <p class="cal-sync" id="calSyncStatus">Loading live availability…</p>
+    </div>
+
+    <div class="cal-side">
+      <h3>Prefer to just ask?</h3>
+      <p>Availability updates directly from the resort's booking sheet, but the fastest way to confirm your date is always a quick message.</p>
+      <a id="calWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-primary magnetic full">Book via WhatsApp</a>
+      <a href="tel:+919160700775" class="btn btn-outline magnetic full">Call +91 91607 00775</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location" id="location">
+  <div class="loc-grid">
+    <div class="loc-copy reveal">
+      <p class="section-kicker">Find Us</p>
+      <h2>Set in the Hanamkonda countryside</h2>
+      <p class="about-text">Rajawaram Road, Chinnapendyala,<br>Hanamkonda, Telangana 506144</p>
+      <a href="https://maps.app.goo.gl/m2CSswyYRv3RKGdV7" target="_blank" rel="noopener" class="btn btn-outline magnetic">Get Directions</a>
+    </div>
+    <div class="loc-map reveal">
+      <iframe
+        src="https://www.google.com/maps?cid=9845055308658927841&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Mayukha EchoNest location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <p class="section-kicker center reveal">Get In Touch</p>
+  <h2 class="center reveal">Let's plan your evening</h2>
+  <div class="contact-grid reveal">
+    <a href="https://wa.me/919160700775?text=Hi%20Mayukha%20EchoNest%2C%20I%27d%20like%20to%20enquire%20about%20a%20booking." target="_blank" rel="noopener" class="contact-card">
+      <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.7 5 2 7.1L3 29l6.4-2.2c2 1.1 4.3 1.7 6.6 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11.5c.3-1 1-1 1.5-1h.7c.3 0 .6.2.7.5l.9 2c.1.3 0 .6-.2.8l-.8.8c-.2.2-.2.4-.1.7.5 1 1.9 2.6 3.2 3.2.3.1.5.1.7-.1l.8-.8c.2-.2.5-.3.8-.2l2 .9c.3.1.5.4.5.7v.7c0 .5-1 1.2-1.9 1.3-1.5.2-3.7-.3-6.2-2.8s-3-4.7-2.8-6.2c.1-.6.3-1.1.2-1.6Z" fill="currentColor"/></svg>
+      <h3>WhatsApp</h3><p>+91 91607 00775</p>
+    </a>
+    <a href="tel:+919160700775" class="contact-card">
+      <svg viewBox="0 0 32 32"><path d="M9 4c-2.8 0-5 2.2-5 5 0 10.5 8.5 19 19 19 2.8 0 5-2.2 5-5v-2.2c0-.6-.4-1.1-1-1.3l-5-1.7c-.5-.2-1.1 0-1.4.4l-1.6 2c-3-1.5-5.4-3.9-6.9-6.9l2-1.6c.4-.3.6-.9.4-1.4l-1.7-5c-.2-.6-.7-1-1.3-1H9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <h3>Call Us</h3><p>+91 91607 00775</p>
+    </a>
+    <a href="mailto:mayukharesorts@gmail.com" class="contact-card">
+      <svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 8.5 16 17l11-8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <h3>Email</h3><p>mayukharesorts@gmail.com</p>
+    </a>
+    <a href="https://www.instagram.com/mayukha_echonest" target="_blank" rel="noopener" class="contact-card">
+      <svg viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="23" cy="9" r="1.5" fill="currentColor"/></svg>
+      <h3>Instagram</h3><p>@mayukha_echonest</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <p class="nav-brand light">Mayukha <em>EchoNest</em></p>
+      <p>Rajawaram Road, Chinnapendyala, Hanamkonda, Telangana 506144</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about">The Resort</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#availability">Availability</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Enquire</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Mayukha EchoNest. All rights reserved.</p>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a id="floatingWhatsapp" href="https://wa.me/919160700775?text=Hi%20Mayukha%20EchoNest%2C%20I%27d%20like%20to%20enquire%20about%20a%20booking." target="_blank" rel="noopener" class="fab-whatsapp" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.7 5 2 7.1L3 29l6.4-2.2c2 1.1 4.3 1.7 6.6 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3Z" fill="currentColor"/><path d="M11 11.5c.3-1 1-1 1.5-1h.7c.3 0 .6.2.7.5l.9 2c.1.3 0 .6-.2.8l-.8.8c-.2.2-.2.4-.1.7.5 1 1.9 2.6 3.2 3.2.3.1.5.1.7-.1l.8-.8c.2-.2.5-.3.8-.2l2 .9c.3.1.5.4.5.7v.7c0 .5-1 1.2-1.9 1.3-1.5.2-3.7-.3-6.2-2.8s-3-4.7-2.8-6.2Z" fill="#0b3d2e"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
