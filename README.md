@@ -1,5 +1,16 @@
 # Mayukha EchoNest — Website
 
+**Live at: https://rithwickbathini.github.io/mayukha-echonest/**
+
+Hosted free on GitHub Pages, from this repo. To publish any future edit: change
+the files, then from this folder run:
+```
+git add -A
+git commit -m "describe your change"
+git push
+```
+The live site updates automatically within about a minute of every push.
+
 A single-page resort website: hero, photo slideshow/gallery, spaces & experiences,
 a live availability calendar, embedded map, and working WhatsApp/call/email contact.
 
