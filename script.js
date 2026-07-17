@@ -35,8 +35,12 @@ window.addEventListener('scroll', () => {
 
 burger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
+  burger.classList.toggle('open');
 });
-mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  burger.classList.remove('open');
+}));
 
 /* ---------- Custom cursor (desktop only) ---------- */
 if (matchMedia('(hover:hover) and (pointer:fine)').matches) {

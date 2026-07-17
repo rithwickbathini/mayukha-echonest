@@ -78,8 +78,11 @@ section{position:relative; padding:min(14vw,140px) 6vw;}
   padding:9px 20px; border:1px solid var(--gold); border-radius:100px; color:var(--gold) !important;
 }
 .nav-cta:hover{background:var(--gold); color:var(--bg) !important;}
-.nav-burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; z-index:600;}
-.nav-burger span{width:24px; height:1.5px; background:var(--ink);}
+.nav-burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; z-index:600; padding:8px;}
+.nav-burger span{width:24px; height:1.5px; background:var(--ink); transition:transform .35s var(--ease), opacity .25s;}
+.nav-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-burger.open span:nth-child(2){opacity:0;}
+.nav-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
 
 .mobile-menu{
   position:fixed; inset:0; background:var(--bg); z-index:400;
