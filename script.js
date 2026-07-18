@@ -37,6 +37,15 @@ themeToggle.addEventListener('click', () => {
   applyTheme(isLight ? 'dark' : 'light');
 });
 
+/* ---------- Walkthrough video mute toggle ---------- */
+const walkthroughVideo = document.getElementById('walkthroughVideo');
+const videoMuteToggle = document.getElementById('videoMuteToggle');
+videoMuteToggle.addEventListener('click', () => {
+  walkthroughVideo.muted = !walkthroughVideo.muted;
+  videoMuteToggle.classList.toggle('unmuted', !walkthroughVideo.muted);
+  videoMuteToggle.setAttribute('aria-label', walkthroughVideo.muted ? 'Unmute video' : 'Mute video');
+});
+
 /* ---------- Nav scroll + mobile menu ---------- */
 const nav = document.getElementById('siteNav');
 const burger = document.getElementById('navBurger');
