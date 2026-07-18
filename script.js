@@ -69,20 +69,6 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
   burger.classList.remove('open');
 }));
 
-/* ---------- Custom cursor (desktop only) ---------- */
-if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
-  document.body.classList.add('has-cursor');
-  const dot = document.querySelector('.cursor-dot');
-  window.addEventListener('mousemove', e => {
-    dot.style.left = e.clientX + 'px';
-    dot.style.top = e.clientY + 'px';
-  });
-  document.querySelectorAll('a, button, .cal-day.available, .cal-day.limited').forEach(el => {
-    el.addEventListener('mouseenter', () => dot.classList.add('grow'));
-    el.addEventListener('mouseleave', () => dot.classList.remove('grow'));
-  });
-}
-
 /* ---------- Magnetic buttons ---------- */
 document.querySelectorAll('.magnetic').forEach(btn => {
   btn.addEventListener('mousemove', e => {
