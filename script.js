@@ -37,13 +37,15 @@ themeToggle.addEventListener('click', () => {
   applyTheme(isLight ? 'dark' : 'light');
 });
 
-/* ---------- Walkthrough video mute toggle ---------- */
-const walkthroughVideo = document.getElementById('walkthroughVideo');
-const videoMuteToggle = document.getElementById('videoMuteToggle');
-videoMuteToggle.addEventListener('click', () => {
-  walkthroughVideo.muted = !walkthroughVideo.muted;
-  videoMuteToggle.classList.toggle('unmuted', !walkthroughVideo.muted);
-  videoMuteToggle.setAttribute('aria-label', walkthroughVideo.muted ? 'Unmute video' : 'Mute video');
+/* ---------- Walkthrough video mute toggles ---------- */
+document.querySelectorAll('.video-frame').forEach(frame => {
+  const video = frame.querySelector('video');
+  const toggle = frame.querySelector('.video-mute-toggle');
+  toggle.addEventListener('click', () => {
+    video.muted = !video.muted;
+    toggle.classList.toggle('unmuted', !video.muted);
+    toggle.setAttribute('aria-label', video.muted ? 'Unmute video' : 'Mute video');
+  });
 });
 
 /* ---------- Nav scroll + mobile menu ---------- */

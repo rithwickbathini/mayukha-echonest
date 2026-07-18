@@ -257,10 +257,13 @@ section h2{font-size:clamp(1.8rem,3.4vw,2.8rem); max-width:20ch; margin-bottom:1
 /* ---------- VIDEO FEATURE ---------- */
 .video-feature{margin-top:64px; display:flex; flex-direction:column; align-items:center; gap:22px;}
 .video-feature-label{font-family:'Fraunces',serif; font-style:italic; font-size:1.3rem; color:var(--gold);}
+.video-row{display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:28px;}
 .video-frame{
-  position:relative; width:100%; max-width:840px; aspect-ratio:16/9; border-radius:var(--radius);
+  position:relative; border-radius:var(--radius);
   overflow:hidden; border:1px solid var(--line); box-shadow:0 34px 80px -34px rgba(0,0,0,.55);
 }
+.video-frame-landscape{width:100%; max-width:560px; aspect-ratio:16/9;}
+.video-frame-portrait{width:100%; max-width:260px; aspect-ratio:9/16;}
 .video-frame video{width:100%; height:100%; object-fit:cover; display:block; background:#000;}
 .video-mute-toggle{
   position:absolute; bottom:18px; right:18px; width:44px; height:44px; border-radius:50%;
