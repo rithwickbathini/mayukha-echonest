@@ -21,6 +21,22 @@ const AVAILABILITY_CONFIG = {
   WHATSAPP_NUMBER: "919160700775"
 };
 
+/* ---------- Dark / light theme toggle ---------- */
+const themeToggle = document.getElementById('themeToggle');
+
+function applyTheme(theme) {
+  if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  else document.documentElement.removeAttribute('data-theme');
+  themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  document.getElementById('themeColorMeta').setAttribute('content', theme === 'light' ? '#faf6ef' : '#0d0b09');
+  localStorage.setItem('theme', theme);
+}
+applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+themeToggle.addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  applyTheme(isLight ? 'dark' : 'light');
+});
+
 /* ---------- Nav scroll + mobile menu ---------- */
 const nav = document.getElementById('siteNav');
 const burger = document.getElementById('navBurger');
